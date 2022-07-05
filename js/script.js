@@ -23,44 +23,53 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg */
 
 const office = [
     {
-        
+        firstName: 'Wayne',
+        lastName: 'Barnett',
+        role: 'Founder & CEO', 
+        photo:'wayne-barnett-founder-ceo.jpg' 
+    },
 
-        components: [
-            {firstName: 'Wayne', lastName: 'Barnett', role: 'Founder & CEO'},
-            {firstName: 'Angela', lastName: 'Carrol', role: 'Chief Editor'},
-            {firstName: 'Walter', lastName: 'Gordon', role: 'Office Manager'},
-            {firstName: 'Angela', lastName: 'Lopez', role: 'Social Media Manager'},
-            {firstName: 'Scott', lastName: 'Estrada', role: 'Developer'},
-            {firstName: 'Barbara', lastName: 'Ramos', role: 'Graphic Designer'},
-        ],
+    {
+        firstName: 'Angela',
+        lastName: 'Carrol',
+        role: 'Chief Editor',
+        photo: 'angela-caroll-chief-editor.jpg'
+    },
 
-        photo: [
-            'wayne-barnett-founder-ceo.jpg',
-            'angela-caroll-chief-editor.jpg',
-            'walter-gordon-office-manager.jpg',
-            'angela-lopez-social-media-manager.jpg',
-            'scott-estrada-developer.jpg',
-            'barbara-ramos-graphic-designer.jpg  '
+    {
+        firstName: 'Walter',
+        lastName: 'Gordon',
+        role: 'Office Manager',
+        photo: 'walter-gordon-office-manager.jpg'
+    },
 
-     ]
-     
+    {
+        firstName: 'Angela',
+        lastName: 'Lopez',
+        role: 'Social Media Manager',
+        photo: 'angela-lopez-social-media-manager.jpg'
+    },
 
-        
+    {
+        firstName: 'Scott',
+        lastName: 'Estrada', 
+        role: 'Developer',
+        photo: 'scott-estrada-developer.jpg'
+    },
 
-    }
-]
+    {
+        firstName: 'Barbara', 
+        lastName: 'Ramos', 
+        role: 'Graphic Designer',
+        photo: 'barbara-ramos-graphic-designer.jpg'
+    },
 
-
-for (let i = 0; i < office.length; i++ ){
-    const currentOffice = office[i]
-    console.log(currentOffice.photo);
-
-    for(let j = 0; j < currentOffice.components.lenght; j++){
-        const currentComponent = currentOffice.components[j]
-        console.log(currentComponent['firstName']);
-        console.log(currentComponent['lastName']);
-        console.log(currentComponent['role']);
-    }
-}
-
-console.table(office)
+           ]
+   
+for(let i = 0; i < office.length; i++){
+    const currentOffice = office [i];
+    console.log('nome :' + currentOffice.firstName);
+    console.log('cognome :' + currentOffice.lastName);
+    console.log('ruolo :' + currentOffice.role);
+    console.log('foto :' + currentOffice.photo)
+}    
