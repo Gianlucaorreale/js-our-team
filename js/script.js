@@ -23,9 +23,10 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg */
 
 const office = [
     {
-        founderAndCEO : 'Wayne Barnett',
+        
 
-        employees : [
+        components: [
+            {firstName: 'Wayne', lastName: 'Barnett', role: 'Founder & CEO'},
             {firstName: 'Angela', lastName: 'Carrol', role: 'Chief Editor'},
             {firstName: 'Walter', lastName: 'Gordon', role: 'Office Manager'},
             {firstName: 'Angela', lastName: 'Lopez', role: 'Social Media Manager'},
@@ -39,13 +40,27 @@ const office = [
             'walter-gordon-office-manager.jpg',
             'angela-lopez-social-media-manager.jpg',
             'scott-estrada-developer.jpg',
-            'barbara-ramos-graphic-designer.jpg '
+            'barbara-ramos-graphic-designer.jpg  '
 
      ]
+     
 
         
 
     }
 ]
+
+
+for (let i = 0; i < office.length; i++ ){
+    const currentOffice = office[i]
+    console.log(currentOffice.photo);
+
+    for(let j = 0; j < currentOffice.components.lenght; j++){
+        const currentComponent = currentOffice.components[j]
+        console.log(currentComponent['firstName']);
+        console.log(currentComponent['lastName']);
+        console.log(currentComponent['role']);
+    }
+}
 
 console.table(office)
