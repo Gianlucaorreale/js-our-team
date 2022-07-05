@@ -9,3 +9,16 @@
     height: 400px;
     background-color: bisque;
 }
+
+#office{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 1rem;
+    margin: 10px;
+    
+}

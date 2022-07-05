@@ -21,7 +21,10 @@ Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg */
 
-const office = [
+
+const office = document.getElementById('office'); 
+
+const components = [
     {
         firstName: 'Wayne',
         lastName: 'Barnett',
@@ -65,11 +68,19 @@ const office = [
     },
 
            ]
-   
-for(let i = 0; i < office.length; i++){
-    const currentOffice = office [i];
-    console.log('nome :' + currentOffice.firstName);
-    console.log('cognome :' + currentOffice.lastName);
-    console.log('ruolo :' + currentOffice.role);
-    console.log('foto :' + currentOffice.photo)
-}    
+let lines = '';
+
+for(let i = 0; i < components.length; i++){
+    const currentComponent = components [i];
+    lines += `<li>${currentComponent.firstName}</li>`
+    lines += `<li>${currentComponent.lastName}</li>`
+    lines += `<li>${currentComponent.role}</li>`
+    lines += `<li>${currentComponent.photo}</li>`
+    
+    console.log('nome :' + currentComponent.firstName);
+    console.log('cognome :' + currentComponent.lastName);
+    console.log('ruolo :' + currentComponent.role);
+    console.log('foto :' + currentComponent.photo)
+}
+
+office.innerHTML = lines;
