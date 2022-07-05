@@ -24,19 +24,26 @@ Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg */
 const office = [
     {
         founderAndCEO : 'Wayne Barnett',
-        chiefEditor : 'Angela Caroll',
-        officeManager : 'Walter Gordon',
-        socialMediaManager : 'Angela Lopez',
-        developer : 'Scott Estrada ',
-        graphicDesigner : 'Barbara Ramos',
 
-        images : ['wayne-barnett-founder-ceo.jpg',
-                  'angela-caroll-chief-editor.jpg',
-                  'walter-gordon-office-manager.jpg',
-                  'angela-lopez-social-media-manager.jpg',
-                  'scott-estrada-developer.jpg',
-                  'barbara-ramos-graphic-designer.jpg '
-                   ]
+        employees : [
+            {firstName: 'Angela', lastName: 'Carrol', role: 'Chief Editor'},
+            {firstName: 'Walter', lastName: 'Gordon', role: 'Office Manager'},
+            {firstName: 'Angela', lastName: 'Lopez', role: 'Social Media Manager'},
+            {firstName: 'Scott', lastName: 'Estrada', role: 'Developer'},
+            {firstName: 'Barbara', lastName: 'Ramos', role: 'Graphic Designer'},
+        ],
+
+        photo: [
+            'wayne-barnett-founder-ceo.jpg',
+            'angela-caroll-chief-editor.jpg',
+            'walter-gordon-office-manager.jpg',
+            'angela-lopez-social-media-manager.jpg',
+            'scott-estrada-developer.jpg',
+            'barbara-ramos-graphic-designer.jpg '
+
+     ]
+
+        
 
     }
 ]
